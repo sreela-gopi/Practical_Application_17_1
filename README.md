@@ -1,17 +1,17 @@
 # **Comparing Classifiers**
 
-###🎯 **Project Goal:**
+### 🎯 **Project Goal:**
 The goal of this project is to build Machine Learning Classification models that can predict if the client will subscribe a term deposit and compare the performance of different classifiers used.
 
-###🔎 **Problem Context:**
+### 🔎 **Problem Context:**
 Utilizing a dataset related to marketing bank products over the telephone, the task is to compare the performance of the classifiers we encountered in this section, namely K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines.
 
-##📖 **Notebook & Data**
+## 📖 **Notebook & Data**
 
  The Jupyter Notebook containing the analysis of the problem can be found here: [Notebook](https://github.com/sreela-gopi/Practical_Application_17_1/blob/main/practical_application_assignment_17.1.ipynb)<br>
  The dataset provided for the analysis can be found here : [Dataset](https://github.com/sreela-gopi/Practical_Application_17_1/blob/main/data/bank-additional-full.csv)
 
-##📈 **Findings**
+## 📈 **Findings**
 Below are the findings from the analysis and implementation of this project. <br>
 **Findings from Exploratory Data Analysis(EDA)** <br>
 
@@ -105,7 +105,7 @@ pdays shows a very large bar at the value of 999. This value signifies that the 
 
     * **Total Time**: The tuning time is reasonable but the resulting performance is disappointing.
 
-###📌 **Conclusion:** <br>
+### 📌 **Conclusion:** <br>
 
 **Best Model: Decision Tree** 🏆<br>
 **Worst Model: KNN** 👎
@@ -114,7 +114,7 @@ The tuned Decision Tree is the most practical choice. It provides good accuracy 
 
 
 
-##💡 **Actionable insights to the Business**
+## 💡 **Actionable insights to the Business**
 1. **Identify the Audience of campaign**:
    * **Age**: The campaign's primary focus was on middle-aged clients (30-50). The bank could develop tailored strategies for younger or older demographics, who might have different financial needs.
    * **Job & Education**: The campaign was focused on 'admin.', 'blue-collar', 'technician', and university-degree clients. The bank should consider creating campaigns to reach other segments, like students or retirees, who may have specific savings or investment needs.
@@ -142,12 +142,12 @@ The tuned Decision Tree is the most practical choice. It provides good accuracy 
 10. **Focus on Quality**: The analysis of campaign vs. y shows that the subscription rate drops significantly after the first two contacts. This indicates that excessive contact with a client can be counterproductive. The bank should focus on making a powerful first or second impression rather than overwhelming clients with numerous calls.
 11. **Discard `duration` as a Predictor**: Although duration has the highest correlation with subscription, it is not an actionable feature for a predictive model **due to data leakage**. The bank should not use this feature to build its models, as it would lead to a false sense of accuracy.
 
-##🌱 **Next steps & Future Recommentions**
+## 🌱 **Next steps & Future Recommentions**
 1. **Address Data Imbalance**: This dataset has a low rate of successful deposits (the 'Yes' class). Explore techniques during model training to improve the model's ability to correctly identify the minority class.
 2. The priority must be improving the model's ability to find the rare 'yes' cases, which is where the real business value lies.
 3. Ensemble techniques such as Random Forest and Gradient Boosting could be employed for improving model performance.
 
-##🛠️ **Tech Stack**
+## 🛠️ **Tech Stack**
 
 **Python:** Pandas, NumPy, scikit-learn <br>
 **Data Visualization:** Matplotlib, Seaborn
